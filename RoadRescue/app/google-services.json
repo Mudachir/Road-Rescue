@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "304911410164",
+    "project_id": "login-register-firebase-c9fbf",
+    "storage_bucket": "login-register-firebase-c9fbf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:304911410164:android:8177b10460b4054fb58fa1",
+        "android_client_info": {
+          "package_name": "com.example.roadrescue"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYuW6c9PZv4mcjVD_J6MvWTjkqQ4nowX4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

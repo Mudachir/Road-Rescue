@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.RoadRescue"
+        tools:targetApi="31">
+        <activity
+            android:name=".chatWin"
+            android:exported="false" />
+        <activity
+            android:name=".Carpooling"
+            android:exported="false"
+            android:label="@string/title_activity_carpooling"
+            android:theme="@style/Theme.RoadRescue" />
+        <activity
+            android:name=".NearByHospital"
+            android:exported="false" />
+
+        <activity
+            android:name=".Doctor"
+            android:exported="false" />
+        <activity
+            android:name=".LogoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ChatBotActivity"
+            android:exported="false" />
+        <!--
+             TODO: Before you run your application, you need a Google Maps API key.
+
+             To get one, follow the directions here:
+
+                https://developers.google.com/maps/documentation/android-sdk/get-api-key
+
+             Once you have your API key (it starts with "AIza"), define a new property in your
+             project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
+             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCXf_iol3g-uLVeloz7bHQBGn56q_W42pY" />
+
+        <activity
+            android:name=".CurrentMapsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_current_maps" /> <!-- <activity -->
+        <!-- android:name=".MapsHotelActivity" -->
+        <!-- android:exported="false" -->
+        <!-- android:label="@string/title_activity_maps_hotel" /> -->
+        <!-- <activity -->
+        <!-- android:name=".HotelMapsActivity" -->
+        <!-- android:exported="false" -->
+        <!-- android:label="@string/title_activity_hotel_maps" /> -->
+        <activity
+            android:name=".CurrentLocationActivity"
+            android:exported="false" /> <!-- <activity -->
+        <!-- android:name=".MyLocationActivity" -->
+        <!-- android:exported="false" /> &lt;!&ndash; <meta-data &ndash;&gt; -->
+        <!-- android:name="com.android.geo.API_KEY" -->
+        <!-- android:value="AIzaSyDhB31rd-piY832kCDokscE4SyjKNlAvK8" /> -->
+        <activity
+            android:name=".ContactDetail"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Register"
+            android:exported="false" />
+        <activity
+            android:name=".Weather"
+            android:exported="false" />
+        <activity android:name=".UserActivity" />
+        <activity
+            android:name=".TestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ImageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HospitalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HomeRepair"
+            android:exported="false" />
+        <activity
+            android:name=".DetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddUpdateContact"
+            android:exported="false" />
+        <activity
+            android:name=".SosContactActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SosCallActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

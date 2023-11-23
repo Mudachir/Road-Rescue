@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#ff23</color>
+    <color name="CrystalBlue">#68a0b0</color>
+    <color name="SapGreen">#507d2a</color>
+    <color name="purple">#2C34BE</color>
+    <color name="blue">#5587f1</color>
+    <color name="lightblue">#40bbf0</color>
+    <color name="purple1">#8157e5</color>
+    <color name="purple2">#7446e2</color>
+    <color name="purple3">#6330df</color>
+    <color name="purple4">#5722d8</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+
+    <color name="lavender">#8692f7</color>
+
+    <color name="primary">#6A7CFF</color>
+    <color name="background">#F7F7FA</color>
+    <color name="cardbackground">#FFFFFF</color>
+    <color name="primarytext">#565B65</color>
+    <color name="secondarytext">#9B9A9D</color>
+    <color name="dashboarditem1">#2CC2EA</color>
+    <color name="dashboarditem2">#4DE9C9</color>
+    <color name="dashboarditem3">#72A4FF</color>
+    <color name="dashboarditem4">#8B72FF</color>
+    <color name="dashboarditem5">#5587f1</color>
+
+
+
+
+
+
+</resources>

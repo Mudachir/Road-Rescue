@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    tools:context=".AddUpdateContact">
+    <include layout="@layout/addcontactbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profiledp"
+            android:layout_width="116dp"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_gravity="center"
+            android:src="@drawable/baseline_person_2_24"
+            app:civ_border_color="@color/lightblue"
+            app:civ_border_width="@dimen/_2sdp" />
+
+        <EditText
+            android:id="@+id/nameEdittxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/input_field"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:padding="@dimen/_15sdp"
+            android:textColorHint="@color/white"
+            android:textSize="@dimen/_18sdp" />
+
+        <EditText
+            android:id="@+id/phoneEdittxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/input_field"
+            android:hint="Phone"
+            android:inputType="phone"
+            android:padding="@dimen/_15sdp"
+            android:textColorHint="@color/white"
+            android:textSize="@dimen/_18sdp" />
+
+        <EditText
+            android:id="@+id/emailEdittxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/input_field"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:padding="@dimen/_15sdp"
+            android:textColorHint="@color/white"
+            android:textSize="@dimen/_18sdp" />
+
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:contentDescription="TODO"
+        android:elevation="@dimen/_5sdp"
+        android:src="@drawable/baseline_add_24"
+        app:pressedTranslationZ="@dimen/_10sdp" />
+
+</RelativeLayout>

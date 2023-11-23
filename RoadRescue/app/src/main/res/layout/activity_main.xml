@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".MainActivity">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context=".MainActivity">
+
+
+    <View
+        android:id="@+id/Headerbackground"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_125sdp"
+        android:background="@color/primary"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <include layout="@layout/hometoolbar" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        app:cardBackgroundColor="@color/lavender"
+        android:layout_marginTop="90dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:elevation="20dp"
+        app:cardCornerRadius="20dp">
+
+        <com.denzcoskun.imageslider.ImageSlider
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/imageslider"
+            app:iss_period="1000"
+            app:iss_delay="1000"
+            app:iss_corner_radius="20"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:overScrollMode="never"
+        android:padding="@dimen/_16sdp"
+        android:scrollbars="vertical"
+        android:layout_below="@+id/cardview"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardRepairTutorial"
+                android:layout_width="370dp"
+                android:layout_height="88dp"
+                android:layout_margin="5dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp">
+
+                <ImageView
+                    android:layout_width="68dp"
+                    android:layout_height="66dp"
+                    android:layout_margin="@dimen/_8sdp"
+                    android:background="@color/dashboarditem1"
+                    android:src="@drawable/repairtutorial" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:paddingLeft="0.1in"
+                    android:paddingTop="0.15in"
+                    android:text="REPAIR TUTORIAL"
+                    android:textColor="@color/primarytext"
+                    android:textSize="23sp"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardChatbot"
+                android:layout_width="370dp"
+                android:layout_height="88dp"
+                android:layout_margin="5dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp">
+
+                <ImageView
+                    android:layout_width="68dp"
+                    android:layout_height="66dp"
+                    android:layout_margin="@dimen/_8sdp"
+                    android:background="@color/CrystalBlue"
+                    android:src="@drawable/chat" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:paddingLeft="0.1in"
+                    android:paddingTop="0.15in"
+                    android:text="CHAT BOT"
+                    android:textColor="@color/primarytext"
+                    android:textSize="23sp"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardSoscontact"
+                android:layout_width="370dp"
+                android:layout_height="88dp"
+                android:layout_margin="5dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp">
+
+                <ImageView
+                    android:layout_width="68dp"
+                    android:layout_height="66dp"
+                    android:layout_margin="@dimen/_8sdp"
+                    android:background="@color/dashboarditem3"
+                    android:src="@drawable/sos" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:paddingLeft="0.1in"
+                    android:paddingTop="0.15in"
+                    android:text="SOS CONTACT"
+                    android:textColor="@color/primarytext"
+                    android:textSize="23sp"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardNearByPlaces"
+                android:layout_width="370dp"
+                android:layout_height="88dp"
+                android:layout_margin="5dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp">
+
+                <ImageView
+                    android:layout_width="68dp"
+                    android:layout_height="66dp"
+                    android:layout_margin="@dimen/_8sdp"
+                    android:background="@color/dashboarditem4"
+                    android:src="@drawable/locationpointer" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:paddingLeft="0.1in"
+                    android:paddingTop="0.15in"
+                    android:text="NEARBY PLACES"
+                    android:textColor="@color/primarytext"
+                    android:textSize="23sp"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardHospital"
+                android:layout_width="370dp"
+                android:layout_height="88dp"
+                android:layout_margin="5dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp">
+
+                <ImageView
+                    android:layout_width="68dp"
+                    android:layout_height="66dp"
+                    android:layout_margin="@dimen/_8sdp"
+                    android:background="@color/dashboarditem1"
+                    android:src="@drawable/hospital" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:paddingLeft="0.1in"
+                    android:paddingTop="0.15in"
+                    android:text="HOSPITAL"
+                    android:textColor="@color/primarytext"
+                    android:textSize="23sp"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardCarpooling"
+                android:layout_width="370dp"
+                android:layout_height="88dp"
+                android:layout_margin="5dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp">
+
+                <ImageView
+                    android:layout_width="68dp"
+                    android:layout_height="66dp"
+                    android:layout_margin="@dimen/_8sdp"
+                    android:background="@color/purple_200"
+                    android:src="@drawable/carpooling" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:paddingLeft="0.1in"
+                    android:paddingTop="0.15in"
+                    android:text="CARPOOLING"
+                    android:textColor="@color/primarytext"
+                    android:textSize="23sp"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardWeather"
+                android:layout_width="370dp"
+                android:layout_height="88dp"
+                android:layout_margin="5dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp">
+
+                <ImageView
+                    android:layout_width="68dp"
+                    android:layout_height="66dp"
+                    android:layout_margin="@dimen/_8sdp"
+                    android:background="@color/blue"
+                    android:src="@drawable/weather" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:paddingLeft="0.1in"
+                    android:paddingTop="0.15in"
+                    android:text="WEATHER UPDATE"
+                    android:textColor="@color/primarytext"
+                    android:textSize="23sp"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </ScrollView>
+
+
+
+</RelativeLayout>
+
+    <!-- Navigation Drawer -->
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/drawer_menu" />
+
+</androidx.drawerlayout.widget.DrawerLayout>
+
+
+
+
+
+

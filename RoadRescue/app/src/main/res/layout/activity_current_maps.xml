@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/location_search"
+            android:layout_width="314dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:ems="10"
+            android:hint="write place name"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:id="@+id/search"
+            android:src="@drawable/search"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:onClick="onClick"
+
+            />
+    </RelativeLayout>
+
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/map"
+        android:layout_marginTop="53dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        tools:context=".CurrentMapsActivity"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/second_relativeLayout">
+
+        <ImageButton
+            android:id="@+id/gasstation"
+            android:layout_width="74dp"
+            android:layout_height="94dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="70dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginBottom="0dp"
+
+            android:onClick="onClick"
+            android:src="@drawable/baseline_local_gas_station_55" />
+
+        <ImageButton
+            android:id="@+id/workshop"
+            android:layout_width="74dp"
+            android:layout_height="94dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="160dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginBottom="0dp"
+
+            android:onClick="onClick"
+            android:src="@drawable/baseline_car_rental_55" />
+
+        <ImageButton
+            android:id="@+id/hotel"
+            android:layout_width="74dp"
+            android:layout_height="94dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="252dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginBottom="0dp"
+
+            android:onClick="onClick"
+            android:src="@drawable/baseline_hotel_55" />
+
+    </RelativeLayout>
+</RelativeLayout>
